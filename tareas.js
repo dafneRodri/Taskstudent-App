@@ -10,7 +10,7 @@ function agregar() {
     tareas.push({ texto, hecho: false });
     input.value = "";
 
-    render();
+    render()';
 }
 
 function render() {
@@ -18,7 +18,7 @@ function render() {
     const vacio = document.getElementById("vacio");
     const contador = document.getElementById("contador");
 
-    lista.innerHTML = "";
+    lista.innerHTML =' "";
 
     let tareasFiltradas = tareas;
 
