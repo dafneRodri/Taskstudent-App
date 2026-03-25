@@ -16,6 +16,7 @@ body {
     border-radius: 15px;
     width: 350px;
     box-shadow: 0 0 20px #00fff7;
+    text-align: center;
 }
 
 /* Input */
@@ -29,17 +30,8 @@ input {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #00fff7;
-    background: #000;
+    background: black;
     color: #00fff7;
-    outline: none;
-}
-
-input::placeholder {
-    color: #00fff7aa;
-}
-
-input:focus {
-    box-shadow: 0 0 8px #00fff7;
 }
 
 /* Botón */
@@ -50,12 +42,17 @@ button {
     background: #00fff7;
     color: black;
     cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
 }
 
-button:hover {
-    box-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+/* Filtros */
+.filtros {
+    margin-top: 10px;
+    display: flex;
+}
+
+.filtros button {
+    flex: 1;
+    margin: 5px;
 }
 
 /* Lista */
@@ -74,13 +71,24 @@ li {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #00fff7;
-    transition: 0.3s;
 }
 
-/* Hover */
-li:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 10px #00fff7;
+/* Acciones */
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botón check */
+.check {
+    background: #00ff88;
+    color: black;
+    font-weight: bold;
+}
+
+.check:hover {
+    box-shadow: 0 0 10px #00ff88;
 }
 
 /* Completada */
@@ -92,13 +100,19 @@ li:hover {
 /* Botón eliminar */
 .eliminar {
     background: #ff0055;
-    border: none;
-    padding: 5px 8px;
-    border-radius: 5px;
     color: white;
-    cursor: pointer;
 }
 
-.eliminar:hover {
-    box-shadow: 0 0 10px #ff0055;
+/* Footer */
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Vacío */
+#vacio {
+    margin-top: 10px;
+    color: #888;
+    display: none;
 }
